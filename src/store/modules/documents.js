@@ -24,7 +24,6 @@ const actions = {
         Object.entries(state.documents).forEach(([categoryId, documents]) => {
             const trimmedValue = value.toLowerCase()
             state.categories.forEach((category) => {
-                console.log(category)
                 if (+category.id === +categoryId && (
                     category.title.toLowerCase().includes(trimmedValue) ||
                     category.description.toLowerCase().includes(trimmedValue))
