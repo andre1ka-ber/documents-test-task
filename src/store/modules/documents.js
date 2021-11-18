@@ -59,7 +59,6 @@ const mutations = {
         state.documents[categoryId] = data
     },
     setSearchResult(state, result) {
-        console.log(result)
         state.searchResult = result
     },
     startSearch(state) {
